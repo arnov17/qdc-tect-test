@@ -1,0 +1,20 @@
+teknologi yang digunakan untuk applikasi rumah makan :
+1. database yang digunakan mengunakan sql yakni mengunakan MySQL, dengan alasan :
+ - struktur table nya lebih fleksibel dalam memetakan bagian-bagian sesuai dengan relasi pada setiap transaksi pembelian makanan
+ - varian data yang dibutuhkan variasi, baik itu untuk type text, char, float yang salah satu contohnya untuk menghitung stock makanan type pada makanan/minuman seperti kg, dozz, liter, dll
+
+2. bahasa pemrogaman yang digunakan mengunakan node.js,
+ - untuk pengembangan awal bahasa tersebut cocok digunakan saat ini untuk warung makan dalam transaksi secara real-time sehingga memproses dan mengolah informasi data bisa di adatapsi dan diolah oleh pengguna. dengan proses pengembangan di masa yang akan datang maka untuk mengembangkan proyek untuk integrasi sangat cocok untuk membuat arsitektur microservce, dengan membuat microservice terpisah. baik itu untuk aplikasi POS versi web untuk internal dan user penguna pelanggan user aplikasi mobile
+
+
+struk pembelian :
+- get list dari table order with join table menu dan table kasir
+
+laporan penghasilan mingguan dan bulanan
+perhitungan dari jumlah pemasukan dari transaksi pada amount yang statusnya sudah berhasil dengan jumlah total pengelaran pada salary employee, fixed_cost_expense (biaya listrik, kebersihan sampah, internet, dll)
+
+laporan stok :
+table stock-in dan stock-out, 
+- pada stock-in akan merecord makanan yang akan dibeli saat masuk gudang makanan
+- pada stock akan merecord makanan yang akan keluar untuk digunakan sebagai proses bahan makanan
+perhitungan kondisi stock dengan perhitungan selisih jenis barang stock_in dengan stock_out
